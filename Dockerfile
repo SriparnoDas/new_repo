@@ -1,7 +1,7 @@
 FROM adoptopenjdk:11-jdk-hotspot
 
-COPY  ./target/user-stock-preference.jar user-stock-preference.jar
+COPY  ./target/user-stock-preference-0.0.1-SNAPSHOT.jar user-stock-preference-0.0.1-SNAPSHOT.jar
 
-EXPOSE 8080
+EXPOSE 8085
 
-ENTRYPOINT ["java", "-jar", "user-stock-preference.jar"]
+ENTRYPOINT ["java", "-jar", "user-stock-preference-0.0.1-SNAPSHOT.jar"]
